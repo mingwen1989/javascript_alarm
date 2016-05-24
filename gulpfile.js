@@ -37,7 +37,7 @@ gulp.task('concatInterface', function() {
 gulp.task('scripts', function(){
   gulp.src('js/**/*.js') //Grabs all js files, uglifies it, and pipes to destination
   .pipe(uglify())
-  .pipe(gulp.dest('app/js'));
+  .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('jshint', function(){
